@@ -55,19 +55,4 @@ void INTERRUPT_Initialize (void)
     // Enable Multi Vector Configuration
     INTCONbits.MVEC = 1;
     
-    //    UERI: UART 1 Error
-    //    Priority: 1
-        IPC6bits.U1EIP = 1;
-    //    Sub Priority: 0
-        IPC6bits.U1EIS = 0;
-    //    UTXI: UART 1 Transmission
-    //    Priority: 1
-        IPC6bits.U1TXIP = 1;
-    //    Sub Priority: 0
-        IPC6bits.U1TXIS = 0;
-    //    URXI: UART 1 Reception
-    //    Priority: 1
-        IPC5bits.U1RXIP = 1;
-    //    Sub Priority: 0
-        IPC5bits.U1RXIS = 0;
 }

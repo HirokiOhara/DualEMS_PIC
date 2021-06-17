@@ -17,12 +17,12 @@
          <string>class com.microchip.mcc.mcu16.systemManager.clk.Clock</string>
       </entry>
       <entry>
-         <string>Pin Module</string>
-         <string>class com.microchip.mcc.mcu16.pinManager.PinManager</string>
-      </entry>
-      <entry>
          <string>WATCHDOG</string>
          <string>class com.microchip.mcc.mcu16.systemManager.wdt.Wdt</string>
+      </entry>
+      <entry>
+         <string>Pin Module</string>
+         <string>class com.microchip.mcc.mcu16.pinManager.PinManager</string>
       </entry>
       <entry>
          <string>ICD</string>
@@ -303,7 +303,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="UART1" registerAlias="UBRG" settingAlias="BRG"/>
-         <value>207</value>
+         <value>16</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="CNEN0B" settingAlias="CNIE0B1"/>
@@ -319,7 +319,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="UART1" name="BaudRateError"/>
-         <value>0.160</value>
+         <value>2.124</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="CNPDB" settingAlias="CNPDB15"/>
@@ -747,7 +747,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="UART1" registerAlias="UTXI" settingAlias="enable"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="INTERNAL OSCILLATOR" registerAlias="REFOCON" settingAlias="DIVSWEN" alias="enabled"/>
@@ -1319,7 +1319,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="UART1" name="AllInterrupts"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="INTERNAL OSCILLATOR" registerAlias="OSCTUN" settingAlias="TUN" alias="Center Frequency+1.316%"/>
@@ -1467,7 +1467,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="UART1" name="BaudRate"/>
-         <value>9600</value>
+         <value>115200</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="FeatureCodeGuard"/>
@@ -3135,7 +3135,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="UART1" registerAlias="UBRG"/>
-         <value>207</value>
+         <value>16</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="CNPUB" settingAlias="CNPUB10" alias="disabled"/>
@@ -3247,7 +3247,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="UART1" registerAlias="UERI" settingAlias="enable"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="trisUserSetRA1"/>
@@ -3411,7 +3411,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="UART1" registerAlias="URXI" settingAlias="enable"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="CNPUB" settingAlias="CNPUB11" alias="enabled"/>
@@ -6321,7 +6321,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files/uart1.h</file>
-         <hash>1157c5bea730a0442ba2c02eaa6eca12707999a7f0b64c9fbb8370986e66fdf6</hash>
+         <hash>78cd92279f94a01274a6fb51d0d3537ba1e57675409a9f82eb58e1255a778c8b</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/exceptions.h</file>
@@ -6329,7 +6329,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files/system.c</file>
-         <hash>61945d938fdaa53cc29a9dd93343711331014aacc89e4db18d8a4f4cf4c491e1</hash>
+         <hash>0e3eae70acfcebea6ed4f0e35b2650c6e81536d87de1acc9c1d027c41eddf7d6</hash>
       </entry>
       <entry>
          <file>main.c</file>
@@ -6349,7 +6349,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files/mcc.h</file>
-         <hash>bfcad885ea8f3ccb2a0b7b0f14e9d806ab6556b0fe084e9d499a13ba7e081133</hash>
+         <hash>ba3467d0c58314060a42dfde414f5cfa587aa74cc525bb6e3002cd21e4750780</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/system.h</file>
@@ -6357,15 +6357,15 @@
       </entry>
       <entry>
          <file>mcc_generated_files/interrupt_manager.c</file>
-         <hash>483d0ef7d805d92a783df9cf240b7b86defdaa69a6a833a8dd88a43015871769</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files/uart1.c</file>
-         <hash>5fffe14d080bd94cef9de610b9ad521665c5d4025f87bf0a3404ddee6ba6fe38</hash>
+         <hash>6f37b443183d718bad26fc1fe3d22c5f7bdc5930aa18ef70ef37b44ed0c8f297</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/mcc.c</file>
          <hash>2e11985539c486e216c053888fe113234647f9929dfd0d5a0e2f130245c5c166</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files/uart1.c</file>
+         <hash>d6e99b8ce75a41c0a9e7cdfa6a35f169982d00332ba1913b9d75ae63cfabde81</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/pin_manager.c</file>

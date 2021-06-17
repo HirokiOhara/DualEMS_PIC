@@ -56,30 +56,42 @@ int main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
-    UART1_Initialize();
     RN52_GPIO9_SetValue(false);  // Set RB11 as L  (= Data mode to Command mode)
     OD_L_SetValue(false);  // Set RB5 as L (= Start OD_L)
     OD_R_SetValue(false);  // Set RB6 as L (= Start OD_R)
     
     // define variables
-    bool checkeredFlag = false;
+    bool Flag = false;
     uint16_t portValue;
     uint8_t data[20];
+    int i;
+    int t;
 
-    while (checkeredFlag == false)
+    while (Flag == false)
     {
         portValue = RN52_GPIO2_GetValue();  // Read RB12 (= output from GPIO2)
         if (portValue == 0){  // If the input is L,
-            UART1_Write("Q");  // Send command "Q\r\n"
-            UART1_Write("\r");
-            UART1_Write("\n");
-            UART1_ReadBuffer(data, 6);   // Check RN52's condition
-            if (data[0] == '0' && data[1] == '4' && data[2] == '0' && data[3]=='3'){
-                // If RN52 is connected,
-                RN52_GPIO9_SetValue(true);
+            while (UART1_IsRxReady()){
+                UART1_Read();
+            }
+            UART1_Write('Q');  // Send command "Q\r\n"
+            UART1_Write(0x0d);
+            UART1_Write(0x0a);
+            for(i=0; i<6; ++i){
+                for (t=0; t< 400000 && !UART1_IsRxReady(); t++);
+                if(UART1_IsRxReady()) {
+                    data[i] = UART1_Read();  // Check RN52's condition
+                }else{
+                    data[i] = 0;
+                }
+            }
+            if (data[0] == '0' && data[1] == '4' && data[2] == '0' && data[3]=='3'){  // If RN52 is connected,
+//                RN52_GPIO9_SetValue(true);
                 OD_L_SetValue(true);
-                OD_R_SetValue(true);
-                checkeredFlag = true;
+                OD_R_SetValue(true); 
+            }else{
+                OD_L_SetValue(false);
+                OD_R_SetValue(false);
             }
         }
     }
