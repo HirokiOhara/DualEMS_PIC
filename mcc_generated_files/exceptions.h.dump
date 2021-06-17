@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="Native" char_bit="8" short_bit="16" int_bit="32" long_bit="64" long_long_bit="64" pointer_bit="64"/>
+  <rawtokens>
+    <file index="0" name="mcc_generated_files/exceptions.h"/>
+    <tok fileIndex="0" linenr="1" column="1" str="/**x  System Exceptions Generated Driver File xx  @Company:x    Microchip Technology Inc.xx  @File Name:x    exceptions.hxx  @Summary:x    This is the generated driver implementation file for handling trapsx    using PIC24 / dsPIC33 / PIC32MM MCUsxx  @Description:x    This source file provides implementations for PIC24 / dsPIC33 / PIC32MM MCUs traps.x    Generation Information : x        Product Revision  :  PIC24 / dsPIC33 / PIC32MM MCUs - 1.170.0x        Device            :  PIC32MM0064GPL028x    The generated drivers are tested against the following:x        Compiler          :  XC16 v1.61x        MPLAB             :  MPLAB X v5.45x*/"/>
+    <tok fileIndex="0" linenr="23" column="1" str="/*x    (c) 2020 Microchip Technology Inc. and its subsidiaries. You may use thisx    software and any derivatives exclusively with Microchip products.xx    THIS SOFTWARE IS SUPPLIED BY MICROCHIP &quot;AS IS&quot;. NO WARRANTIES, WHETHERx    EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIEDx    WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR Ax    PARTICULAR PURPOSE, OR ITS INTERACTION WITH MICROCHIP PRODUCTS, COMBINATIONx    WITH ANY OTHER PRODUCTS, OR USE IN ANY APPLICATION.xx    IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE,x    INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KINDx    WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HASx    BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. TO THEx    FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS INx    ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,x    THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.xx    MICROCHIP PROVIDES THIS SOFTWARE CONDITIONALLY UPON YOUR ACCEPTANCE OF THESEx    TERMS.x*/"/>
+    <tok fileIndex="0" linenr="45" column="1" str="#"/>
+    <tok fileIndex="0" linenr="45" column="2" str="ifndef"/>
+    <tok fileIndex="0" linenr="45" column="9" str="_EXCEPTIONS_H"/>
+    <tok fileIndex="0" linenr="46" column="1" str="#"/>
+    <tok fileIndex="0" linenr="46" column="2" str="define"/>
+    <tok fileIndex="0" linenr="46" column="9" str="_EXCEPTIONS_H"/>
+    <tok fileIndex="0" linenr="48" column="1" str="#"/>
+    <tok fileIndex="0" linenr="48" column="2" str="include"/>
+    <tok fileIndex="0" linenr="48" column="10" str="&lt;stdint.h&gt;"/>
+    <tok fileIndex="0" linenr="50" column="1" str="/**  @Summary    Generic exception handler.  @Description    This function overrides the XC32 default _weak_ _generic_exception_handler.  @Preconditions    None.  @Returns    None.  @Param    None.  @Example    None.*/"/>
+    <tok fileIndex="0" linenr="70" column="1" str="void"/>
+    <tok fileIndex="0" linenr="70" column="6" str="_general_exception_handler"/>
+    <tok fileIndex="0" linenr="70" column="33" str="("/>
+    <tok fileIndex="0" linenr="70" column="35" str="void"/>
+    <tok fileIndex="0" linenr="70" column="40" str=")"/>
+    <tok fileIndex="0" linenr="70" column="41" str=";"/>
+    <tok fileIndex="0" linenr="71" column="1" str="#"/>
+    <tok fileIndex="0" linenr="71" column="2" str="endif"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <standards>
+    <c version="c11"/>
+    <cpp version="c++20"/>
+  </standards>
+  <directivelist>
+    <directive file="mcc_generated_files/exceptions.h" linenr="45" str="#ifndef _EXCEPTIONS_H"/>
+    <directive file="mcc_generated_files/exceptions.h" linenr="46" str="#define _EXCEPTIONS_H"/>
+    <directive file="mcc_generated_files/exceptions.h" linenr="48" str="#include &lt;stdint.h&gt;"/>
+    <directive file="mcc_generated_files/exceptions.h" linenr="71" str="#endif"/>
+  </directivelist>
+  <tokenlist>
+    <token id="0x7faa6dc1e3f0" file="mcc_generated_files/exceptions.h" linenr="70" column="1" str="void" scope="0x7faa6dc1ce80" type="name"/>
+    <token id="0x7faa6dc1f230" file="mcc_generated_files/exceptions.h" linenr="70" column="6" str="_general_exception_handler" scope="0x7faa6dc1ce80" type="name" function="0x7faa6dc1cfb0" astParent="0x7faa6dc1c9a0"/>
+    <token id="0x7faa6dc1c9a0" file="mcc_generated_files/exceptions.h" linenr="70" column="33" str="(" scope="0x7faa6dc1ce80" link="0x7faa6dc1f060" astOperand1="0x7faa6dc1f230" valueType-type="void"/>
+    <token id="0x7faa6dc1f060" file="mcc_generated_files/exceptions.h" linenr="70" column="40" str=")" scope="0x7faa6dc1ce80" link="0x7faa6dc1c9a0"/>
+    <token id="0x7faa6dc1f0b0" file="mcc_generated_files/exceptions.h" linenr="70" column="41" str=";" scope="0x7faa6dc1ce80"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0x7faa6dc1ce80" type="Global">
+      <functionList>
+        <function id="0x7faa6dc1cfb0" tokenDef="0x7faa6dc1f230" name="_general_exception_handler" type="Function"/>
+      </functionList>
+    </scope>
+  </scopes>
+  <variables>
+  </variables>
+  <valueflow>
+  </valueflow>
+</dump>
+</dumps>
