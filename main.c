@@ -64,21 +64,24 @@ int main(void)
     // define variables
     bool checkeredFlag = false;
     uint16_t portValue;
-    uint8_t data;
+    uint8_t data[20];
 
     while (checkeredFlag == false)
     {
         portValue = RN52_GPIO2_GetValue();  // Read RB12 (= output from GPIO2)
-        if (portValue == 0)  // If the input is L,
+        if (portValue == 0){  // If the input is L,
             UART1_Write("Q");  // Send command "Q\r\n"
             UART1_Write("\r");
             UART1_Write("\n");
-            data = UART1_ReadBuffer();   // Check RN52's condition
-            if (data == "0x30 0x34 0x30 0x33 0x5c 0x72 0x5c 0x6e")   // If RN52 is connected,
+            UART1_ReadBuffer(data, 6);   // Check RN52's condition
+            if (data[0] == '0' && data[1] == '4' && data[2] == '0' && data[3]=='3'){
+                // If RN52 is connected,
                 RN52_GPIO9_SetValue(true);
                 OD_L_SetValue(true);
                 OD_R_SetValue(true);
                 checkeredFlag = true;
+            }
+        }
     }
     return 1;
 }
