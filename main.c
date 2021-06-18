@@ -78,14 +78,14 @@ int main(void)
             UART1_Write(0x0d);
             UART1_Write(0x0a);
             for(i=0; i<6; ++i){
-                for (t=0; t< 400000 && !UART1_IsRxReady(); t++);
+                for(t=0; t< 400000 && !UART1_IsRxReady(); t++);
                 if(UART1_IsRxReady()) {
                     data[i] = UART1_Read();  // Check RN52's condition
                 }else{
                     data[i] = 0;
                 }
             }
-            if (data[0] == '0' && data[1] == '4' && data[2] == '0' && data[3]=='3'){  // If RN52 is connected,
+            if (data[0] == '0' && data[1] == '4' && data[2] == '0' && data[3]=='D'){  // If RN52 is connected,
 //                RN52_GPIO9_SetValue(true);
                 OD_L_SetValue(true);
                 OD_R_SetValue(true); 
