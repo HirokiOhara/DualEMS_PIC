@@ -61,8 +61,8 @@ void UART1_Initialize(void)
     U1MODE = (0x8008 & ~(1<<15));  // disabling UARTEN bit
     // UTXISEL TX_ONE_CHAR; UTXINV disabled; ADDR 0; MASK 0; URXEN disabled; OERR disabled; URXISEL RX_ONE_CHAR; UTXBRK disabled; UTXEN disabled; ADDEN disabled; 
     U1STA = 0x00;
-    // BaudRate = 115200; Frequency = 8000000 Hz; BRG 16; 
-    U1BRG = 0x10;
+    // BaudRate = 9600; Frequency = 8000000 Hz; BRG 207; 
+    U1BRG = 0xCF;
     
     //Make sure to set LAT bit corresponding to TxPin as high before UART initialization
     U1STASET = _U1STA_UTXEN_MASK;
