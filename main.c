@@ -87,11 +87,11 @@ int main(void)
             }
             if (data[0] == '0' && data[1] == '4' && data[2] == '0' && data[3]=='D'){  // If RN52 is connected,
 //                RN52_GPIO9_SetValue(true);
-                OD_L_SetValue(true);
-                OD_R_SetValue(true); 
-            }else{
                 OD_L_SetValue(false);
-                OD_R_SetValue(false);
+                OD_R_SetValue(false);                 
+            }else{
+                OD_L_SetValue(true);
+                OD_R_SetValue(true);
             }
         }
     }
