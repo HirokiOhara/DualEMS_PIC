@@ -1143,7 +1143,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ODCB"/>
-         <value>0</value>
+         <value>96</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="INTERNAL OSCILLATOR" registerAlias="RSWRST" settingAlias="SWRST" alias="disabled"/>
@@ -4107,7 +4107,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ODCB" settingAlias="ODCB5"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="LATA" settingAlias="LATA4"/>
@@ -4183,7 +4183,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ODCB" settingAlias="ODCB6"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="CNSTATB" settingAlias="CNSTATB2" alias="disabled"/>
@@ -6333,7 +6333,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files/system.c</file>
-         <hash>0e3eae70acfcebea6ed4f0e35b2650c6e81536d87de1acc9c1d027c41eddf7d6</hash>
+         <hash>61945d938fdaa53cc29a9dd93343711331014aacc89e4db18d8a4f4cf4c491e1</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/clock.h</file>
@@ -6349,7 +6349,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files/mcc.h</file>
-         <hash>ba3467d0c58314060a42dfde414f5cfa587aa74cc525bb6e3002cd21e4750780</hash>
+         <hash>bfcad885ea8f3ccb2a0b7b0f14e9d806ab6556b0fe084e9d499a13ba7e081133</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/system.h</file>
@@ -6369,7 +6369,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files/pin_manager.c</file>
-         <hash>dba36fe9d36cda43456c3614b95b5a531d7d0ace4366c4a6328a8353f91a5215</hash>
+         <hash>a9a07cc25ecaf05990045d3f2be4bb61201040f08bc7d44c2b310688ba386f01</hash>
       </entry>
    </generatedFileHashHistoryMap>
    <mc3libFileHashHistoryMap class="java.util.HashMap"/>
